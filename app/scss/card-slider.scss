@@ -1,0 +1,32 @@
+.card-slider {
+    display: flex;
+
+    &__thumbs {
+        cursor: pointer;
+
+        img {
+            pointer-events: none;
+        }
+
+    }
+
+    &__thumb {
+        margin-bottom: 10px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__main {
+        margin-left: 15px;
+        width: 686px;
+
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

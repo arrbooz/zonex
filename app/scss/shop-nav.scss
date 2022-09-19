@@ -1,0 +1,65 @@
+.shop-nav {
+    display: flex;
+    align-items: center;
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+
+    &__link {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: opacity .3s;
+
+        &--user {
+            background-image: url(../img/user.png);
+        }   
+
+        &:hover {
+            opacity: 0.7;
+            transition: opacity .3s;
+        }
+    }
+}
+
+.cart {
+    width: auto;
+    height: auto;
+    &__icon {
+        display: inline-block;
+        background-image: url(../img/cart.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 16px;
+        height: 16px;
+    }
+    
+}
+
+.search-form {
+    &__btn {
+        display: inline-block;
+        background-color: transparent;
+        border: none;
+        background-image: url(../img/search.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 16px;
+        height: 16px;
+        transition: opacity .3s;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.7;
+            transition: opacity .3s;
+        }
+    }
+}
